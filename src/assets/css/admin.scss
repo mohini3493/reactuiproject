@@ -1,0 +1,39 @@
+.admin-navigation {
+  margin-top: 36px;
+  background: #191C21;
+  margin-bottom: 118px;
+  .container {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .nav-link {
+    padding: 1rem 0;
+    margin-right: 1.5rem;
+    color: #fff;
+    background-color: transparent;
+    &.active,
+    &:hover {
+      background-color: transparent;
+      color: #02AAB0;
+    }
+  }
+  .dropdown.show {
+    .dropdown-toggle {
+      color: #02AAB0;
+    }
+    .dropdown-menu {
+      padding: 1rem;
+    }
+    a.dropdown-item {
+      color: #fff;
+      &:hover {
+        color: #02AAB0;
+      }
+    }
+  }
+}
+.remove-caret .dropdown-toggle::after {
+  display: none;
+}
